@@ -31,8 +31,8 @@ y_2 = int(y_2)
 numerator_sum = x_1 * y_2 + x_2 * y_1
 denominator_sum = y_2 * y_1
 
-numerator_mul = x_1 * y_2
-denominator_mul = x_2 * y_1
+numerator_mul = x_1 * x_2
+denominator_mul = y_1 * y_2
 
 print("Сумма дробей: ", numerator_sum, "/", denominator_sum)
 print("Произведение дробей: ", numerator_mul, "/", denominator_mul)
