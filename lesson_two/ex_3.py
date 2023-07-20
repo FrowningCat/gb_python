@@ -2,6 +2,7 @@ number: int = int(input("Введите число: "))
 
 print(bin(number))
 print(oct(number))
+print(hex(number))
 
 
 def number_system(number_system, numberr):
@@ -15,3 +16,4 @@ def number_system(number_system, numberr):
 
 number_system(2, number)
 number_system(8, number)
+number_system(16, number)
