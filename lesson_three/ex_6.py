@@ -13,9 +13,7 @@ while i < len(old_list):
         text = ""
     i += 1
 
-i = 0
 new_list.sort()
 
-while i < len(new_list):
-    print(i + 1, new_list[i])
-    i += 1
+for i, item in enumerate(new_list, 1):
+    print(f'{i} {item:>{len(max(new_list, key=len))}}')
