@@ -14,6 +14,7 @@ while i < 10:
             word = text[x]
             number = text.count(text[x])
         x += 1
+    # Заносим слово в масив
     list_words.append(word)
     # Удоляем это слово из списка и проходим этот цикл еще 9 раз
     while t < len(text):
