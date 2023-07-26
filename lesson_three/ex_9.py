@@ -6,7 +6,6 @@ list_words = []
 while i < 10:
     word = ""
     x = 0
-    t = 0
     number = 0
     while x < len(text):
         if text.count(text[x]) > number:
@@ -14,10 +13,8 @@ while i < 10:
             number = text.count(text[x])
         x += 1
     list_words.append(word)
-    while t < len(text):
-        if word in text:
-            text.remove(word)
-        t += 1
+    if word in text:
+        text.remove(word)
     i += 1
 
 print(list_words)
