@@ -1,14 +1,12 @@
-matrix = [[1, 2, 3], [4, 5, 6]]
+matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 
 
 def fun(matrix):
-    matrix_0 = matrix[0]
-    matrix_1 = matrix[1]
-    i = 0
     new_matrix = []
-    while i < len(matrix_0):
-        new_matrix.append((matrix_0[i], matrix_1[i]))
-        i += 1
+    for i in range(len(matrix[0])):
+        new_matrix.append(list())
+        for j in range(len(matrix)):
+            new_matrix[i].append(matrix[j][i])
     print(new_matrix)
 
 
