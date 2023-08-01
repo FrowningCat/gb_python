@@ -1,4 +1,6 @@
 str = "Lorem ipsum dolor sit amet"
-dict = {}
-for i in str: dict[i] = ord(i)
-print(dict)
+dict = ({i: ord(i) for i in str})
+dict_it = iter(dict.items())
+
+for i in range(5):
+    print(next(dict_it))
