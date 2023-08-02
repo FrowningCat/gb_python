@@ -1,12 +1,17 @@
-def fun(x, y, z):
-    u = 0
-    while u < z:
+def fun(x, y, number_attempt):
+    mistic(x, y)
+    attempt = 0
+    while attempt < number_attempt:
         t = input("Введите отгадку: ")
-        tt = y.split(" ")
-        for i in range(len(tt)):
-            if t == tt[i]:
-                print(f"Вы угадали с {u + 1} попытки")
+        answer = y.split(" ")
+        for i in range(len(answer)):
+            if t == answer[i]:
+                print(f"Вы угадали с {attempt + 1} попытки")
                 exit()
-        u += 1
-
+        attempt += 1
     print("0")
+
+
+def mistic(x, y):
+    tuple = {x: y}
+    print(tuple)
