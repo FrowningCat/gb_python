@@ -1,3 +1,5 @@
 from ex_2_dop import fun
+from sys import argv
 
-fun(1, 4, 5)
+argument = map(int, argv[1:])
+fun(*argument)
